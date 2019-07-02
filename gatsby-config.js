@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Frontend Gatsby Workshop',
-    description: 'A site we built together',
+    title: 'Frontend Masters Gatsby Workshop',
+    description:
+      'A site we built together during a full-day Frontend Masters Gatsby workshop!',
   },
   plugins: [
     'gatsby-plugin-emotion',
@@ -14,6 +15,7 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve('./src/components/layout.js'),
         },
+        gatsbyRemarkPlugins: [{ resolve: 'gatsby-remark-images' }],
       },
     },
     {
